@@ -40,7 +40,8 @@
                 // DataV.changeTheme("datav");
                 var pie = new Pie("chart", {
                     width: 1000,
-                    tag: true
+                    tag: true,
+                    showText: false
                 });
                 DataV.csv("pie.csv", function (source) {
                     pie.setSource(source);

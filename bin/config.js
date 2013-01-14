@@ -8,6 +8,15 @@ exports.deps = [
   'deps/underscore-1.4.2.js'
 ];
 
+exports.deps_without_jquery = [
+  'deps/array_shim.js',
+  'deps/json2.js',
+  'deps/d3.v2.js',
+  'deps/raphael.js',
+  'deps/eventproxy-0.2.0.js',
+  'deps/underscore-1.4.2.js'
+];
+
 exports.datav = exports.deps.concat([
   'lib/datav.js'
 ]);
@@ -25,6 +34,12 @@ exports.datav_without_jquery = exports.without([
 exports.data_html5 = exports.without([
   'deps/array_shim.js',
   'deps/json2.js'
+]);
+
+exports.arale = exports.without([
+  'deps/array_shim.js',
+  'deps/json2.js',
+  'deps/jquery-1.7.1.js'
 ]);
 
 exports.data_shu = exports.without([
